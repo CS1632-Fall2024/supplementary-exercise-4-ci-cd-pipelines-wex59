@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.wonsunahn</groupId>
-  <artifactId>cs1632-cicd-pipelines</artifactId>
+  <artifactId>cs1632-cicd-pipelines-wex59</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
@@ -34,13 +34,21 @@
     <developerConnection>scm:git:ssh://github.com:wonsunahn/CS1632_CICD_JUnit.git</developerConnection>
     <url>http://github.com/wonsunahn/CS1632_CICD_JUnit/tree/master</url>
   </scm>
+  
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/CS1632-Fall2024/supplementary-exercise-4-ci-cd-pipelines-wex59</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
-    <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
+    <maven-javadoc-plugin.version>3.11.1</maven-javadoc-plugin.version>
   </properties>
 
   <dependencies>
@@ -87,7 +95,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.8.0</version>
       </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
